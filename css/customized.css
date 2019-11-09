@@ -2,6 +2,10 @@
 /* UNIVERSAL
 -------------------------------------------------- */
 
+body {
+  font-family:"微軟正黑體",sans-serif!important;
+}
+
 .bg-adult {
   background-color: #0ba19c;
 }
@@ -112,39 +116,46 @@ header .nav {
   margin-left: auto;
 }
 
+@media (min-width: 360px) {
+  .bpcontainer {
+    max-width: 100%;
+  }
+}
+
+
 @media (min-width: 576px) {
   .bpcontainer {
-    max-width: 540px;
+    max-width: 80%;
   }
 }
 
 @media (min-width: 768px) {
   .bpcontainer {
-    max-width: 560px;
+    max-width: 100%;
   }
 }
 
 @media (min-width: 992px) {
   .bpcontainer {
-    max-width: 590px;
+    max-width: 80%;
   }
 }
 
 @media (min-width: 1200px) {
   .bpcontainer {
-    max-width: 590px;
+    max-width: 45%;
   }
 }
 
 @media (min-width: 1400px) {
   .bpcontainer {
-    max-width: 850px;
+    max-width: 100%;
   }
 }
 
 @media (min-width: 1500px) {
   .bpcontainer {
-    max-width: 850px;
+    max-width: 100%;
   }
 }
 
@@ -168,7 +179,13 @@ header .nav {
 .team-pic-mg {
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 0.5rem;
 }
+
+.team-text {
+  font-size: 14px;
+}
+
 
 /* THE CAROUSEL (Course)
 -------------------------------------------------- */
