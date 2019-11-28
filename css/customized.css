@@ -4,6 +4,24 @@
 
 body {
   font-family:"微軟正黑體",sans-serif!important;
+  font-size: 15px;
+  background-color: #f5f5f5
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 1000; 
+}
+
+h5 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
 }
 
 .bg-adult {
@@ -11,6 +29,18 @@ body {
 }
 .bg-child {
   background-color: #f8b425;
+}
+
+.border-adult {
+  border-style:solid;
+  border-color: #0ba19c !important;
+  border-width: 0.18rem;
+}
+
+.border-child {
+  border-style: solid;
+  border-color: #f8b425 !important;
+  border-width: 0.18rem;
 }
 
 .text-adult {
@@ -41,18 +71,37 @@ body {
   margin-top: 7rem;
 }
 
+.t-shadow {
+  text-shadow: rgb(71, 71, 71) 1px 1px 2px;
+}
+
+.t-shadown {
+  text-shadow: none;
+}
+
+.btn-secondary {
+  border: none;
+}
+
+
+
 /* NAVBAR
 -------------------------------------------------- */
 
 .navbar-brand {
-  font-size: 1rem;
+  font-size: 2.2rem;
+  font-weight: 800;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  margin-right: 0rem;
+  margin-bottom: 0rem;
 }
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
-  border: 1px solid transparent;
+  border: none;
   border-radius: 0rem
 }
 .navbar-collapse a {
@@ -62,24 +111,49 @@ header .nav {
   padding-top: 1rem;
 }
 
-/* THE CAROUSEL (HOME)
+.navbar-brand p {
+  margin-bottom: 0rem;
+}
+
+.jumbotron {
+  padding: 2rem;
+  background-color: #fff;
+  margin-bottom: 0rem;
+}
+
+/* LOGO BANNER */
+
+.toplogowrapper {
+  margin-top: 40px;
+  text-align: center;
+  position: relative;
+  height: 164px;
+}
+
+/* THE CAROUSEL (INDEX)
 -------------------------------------------------- */
 
 /* Carousel base class */
 .carousel {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
+
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
 }
 
+.carousel-caption p {
+  margin-bottom: 1.25rem;
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+
 /* Declare heights because of positioning of img element */
 
 .carousel-item > img {
-  position: absolute;
-  top: 4.5rem;
+  position: relative;
   left: 0;
   min-width: 100%;
   min-height: 100%;
@@ -87,19 +161,59 @@ header .nav {
 
 /* Responsitive CSS */
 
-@media (min-width: 40em) {
+@media (max-width: 767px) {
   /* Bump up size of carousel content */
   .carousel-caption p {
     margin-bottom: 1.25rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
     line-height: 1.4;
   }
+}
+
+/* The COLUMN SECTION (INDEX)
+-------------------------------------------------- */
+
+.pdindex {
+  padding-left: 17.5px;
+  padding-right: 17.5px;
+}
+
+/* content fontstyle setup */
+
+.pindex {
+  color: #666;
+  font-weight: 700;
 }
 
 /* TEAM LANDING (ABOUT)
 -------------------------------------------------- */
 
-.bp-img {
+.aboutifcard{
+  margin-top: 50px;
+}
+
+.aboutifcard-p {
+  margin-bottom: 1.25rem;
+  font-size: 1.125rem;
+  line-height: 1.85;
+  color: #555;
+  font-weight: 500;
+}
+
+/* Responsitive CSS */
+
+@media (max-width: 767px) {
+  /* Bump up size of card content */
+  .aboutifcard-p {
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.85;
+    color: #555;
+    font-weight: 500;
+  }
+}
+
+/* .bp-img {
   height: auto;
   max-width: 100%;
 }
@@ -163,17 +277,18 @@ header .nav {
   .bpcontainer {
     max-width: 100%;
   }
-}
+} */
 
 /* TEAM INTRO (ABOUT)
 -------------------------------------------------- */
 
 .team-mg {
   margin-bottom: 3rem;
+  margin-top: 1.5rem;
 }
 
 .team-row-mg {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .team-pic-mg {
@@ -192,7 +307,6 @@ header .nav {
 
 .course-item > img {
   position: relative;
-  top: 4.5rem;
   left: 0;
   min-width: 100%;
   min-height: 100%;
@@ -201,7 +315,6 @@ header .nav {
 @media (min-width: 576px) {
   .course-item > img {
     position: relative;
-    top: 4.5rem;
     left: 0;
     min-width: 100%;
     min-height: 100%;
@@ -211,7 +324,6 @@ header .nav {
 @media (min-width: 992px) {
   .course-item > img {
     position: relative;
-    top: 4.5rem;
     left: 0;
     min-width: 100%;
     height: 32rem;
@@ -221,7 +333,6 @@ header .nav {
 @media (min-width: 1200px) {
   .course-item > img {
     position: relative;
-    top: 4.5rem;
     left: 0;
     min-width: 100%;
     height: 32rem;
@@ -231,7 +342,6 @@ header .nav {
 @media (min-width: 1400px) {
   .course-item > img {
     position: relative;
-    top: 4.5rem;
     left: 0;
     min-width: 100%;
     height: 36rem;
@@ -241,7 +351,6 @@ header .nav {
 @media (min-width: 1500px) {
   .course-item > img {
     position: relative;
-    top: 4.5rem;
     left: 0;
     min-width: 100%;
     height: 40rem;
@@ -251,9 +360,8 @@ header .nav {
 @media (min-width: 1700px) {
   .course-item > img {
     position: relative;
-    top: 4.5rem;
     left: 0;
-    min-width: 75%;
+    min-width: 100%;
     height: 40rem;
   }
 }
@@ -261,58 +369,55 @@ header .nav {
 /* COURSE
 -------------------------------------------------- */
 
-.card-img-right {
-  height: 100%;
-  border-radius: 0 3px 3px 0;
-}
-
-.flex-auto {
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-}
-
-.h-250 { height: 250px; }
-@media (min-width: 768px) {
-  .h-md-250 { height: 250px; }
-}
 
 /*
- * Blog name and description
+ * Course posts
  */
-.blog-title {
-  margin-bottom: 0;
-  font-size: 2rem;
-  font-weight: 400;
-}
-.blog-description {
-  font-size: 1.1rem;
-  color: #999;
+.course-post {
+  margin-bottom: 2rem;
 }
 
-@media (min-width: 40em) {
-  .blog-title {
-    font-size: 3.5rem;
+.course-post li {
+  padding-bottom: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.85;
+  color: #555;
+  font-weight: 500;
+}
+
+.course-post p {
+  padding-bottom: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.85;
+  color: #555;
+  font-weight: 500;
+}
+
+/* Responsitive CSS */
+
+@media (max-width: 767px) {
+  /* Bump up size of card content */
+  .course-post li {
+    padding-bottom: 1rem;
+    font-size: 1.125rem;
+    line-height: 1.85;
+    color: #555;
+    font-weight: 500;
   }
 }
 
-/* Pagination */
-.blog-pagination {
-  margin-bottom: 4rem;
-}
-.blog-pagination > .btn {
-  border-radius: 2rem;
+@media (max-width: 767px) {
+  /* Bump up size of card content */
+  .course-post li {
+    padding-bottom: 1rem;
+    font-size: 1.125rem;
+    line-height: 1.85;
+    color: #555;
+    font-weight: 500;
+  }
 }
 
-/*
- * Blog posts
- */
-.blog-post {
-  margin-bottom: 4rem;
-}
-.blog-post-title {
-  margin-bottom: .25rem;
-  font-size: 2.5rem;
-}
+
 .blog-post-meta {
   margin-bottom: 1.25rem;
   color: #999;
@@ -331,3 +436,18 @@ header .nav {
   }
 }
 
+/* CONTAINER (CONTACT) */
+
+.contactmg {
+  margin-top:100px;
+  margin-bottom: 50px;
+}
+
+.contactp {
+  color: #555;
+}
+
+.contactcard {
+  background-color: transparent;
+  border: none;
+}

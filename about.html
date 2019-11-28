@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/customized.css">
 
-    <title>If English Studio | About</title>
+    <!-- Font Awesome icon library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>If English Studio | About IF & Teachers</title>
   </head>
 
   <body>
@@ -19,10 +22,7 @@
 
     <header>
       <nav class="navbar fixed-top navbar-dark bg-adult">
-        <a class="navbar-brand" href="#">
-          <img src="img/LOGO.jpg" width="50" height="50" class="d-inline-block rounded-circle border" alt="">
-          &nbsp;&nbsp;如果說...
-        </a>
+        <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -38,13 +38,10 @@
               <a class="nav-link" href="course.html">Course</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="course2.html">Course2</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="feedbacks.html">Feedbacks</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Partner</a>
@@ -57,72 +54,102 @@
       </nav>
     </header>
 
-    <div class="bg-white text-center bp-mg">
-      <div class="bpcontainer" style="padding-top: 5rem">
-        <img  src="img/Team.png" class="bp-img" alt="">
-        <h1 class="display-4">IF TEAM</h1>
-        <p class="lead">"Language is the road map of a culture. It tells you where its people come from and where they are going."‒Rita Mae Brown</p>
+<!-- LOGO BANNER -->
+    <div class="jumbotron jumbotron-fluid toplogowrapper">
+      <div class="container-fluid pt-0">
+        <a class="navbar-brand" href="#">
+          <img src="img/LOGO2.jpg" width="60px" height="60px" class="d-inline-block mb-2" alt="">
+          <h1 class="text-adult">如&nbsp;果&nbsp;說&nbsp;英&nbsp;語&nbsp;會&nbsp;話&nbsp;工&nbsp;作&nbsp;室</h1>
+        </a>
       </div>
     </div>
 
-<!-- Teams -->
+		<div class="container my-3">
+			<div class="row justify-content-center">
+				<div class="card w-85 shadow-sm bg-white border-0 justify-content-center pt-2 mt-2">
+				  <div class="card-body">
+				    <h5 class="card-title">關於如果說</h5>
+				    <p class="card-text aboutifcard-p">如果說成立於2017年的夏天，在斗六開啟了工作室的篇章。</p>
+				    <p class="card-text aboutifcard-p">在台灣，我們很少有說英文的機會，沒有環境，沒有空間，又或是沒有勇氣開口。<br>如果說，你/妳願意嘗試新的可能，歡迎你加入我們！</p>
+				    <p class="aboutifcard-p">如果說打造全英文的會話環境，以四到六人小班教學，透過TED TALK、BBC 新聞、歐美電影及影集…等主題，加強學生的英文口說與自信。</p>
+				    <p class="card-text aboutifcard-p">我們相信，學英文不只為了考試，更是為了探索不同文化，認識新朋友的重要途徑。If English Studio 陪伴你一同成長，一起抓住全新的可能性，透過英文打開新世界的大門。</p>
+				  </div>
+				  <img src="img/Group.JPG" class="card-img-top" alt="...">
+          <div id="adultteacher"></div>         
+			    <div class="card-body pb-0">
+			    	<h5 class="card-title">關於如果說的老師們</h5>
+				    <div class="container team-mg">
+				      <div class="row">
+				      <!-- Han -->
+				        <div class="text-center col-lg-4 col-md-6 col-sm-6 team-row-mg">
+				          <img src="img/Han.JPG" alt="Han" style="width="200px" height="200px"" class="rounded-circle team-pic-mg border-adult">
+				          <h2>Han Chao</h2>
+				          <h5>【創辦人& 線上一對一】</h5>
+				          <div class="text-left">
+				            <p>在教學的過程當中，常因看見學了多年英語的學生們，無法向外國朋友流利地表達想法而感到可惜。</p>
+				            <p>我始終相信，學習英語能讓自己更多地看見世界，透過語言了解其他文化，也才是語言學習的本質。</p>
+				          </div>
+				          <p><a class="btn btn-secondary bg-adult" href="#" data-toggle="modal" data-target="#Han">More</a></p>
+				        </div><!-- /.col-lg-4 -->
+				      <!-- Alex Chang -->
+				        <div class=" text-center col-lg-4 col-md-6 col-sm-6 team-row-mg">
+				          <img src="img/Alex.JPG" alt="Alex" style="width="200px" height="200px"" class="rounded-circle team-pic-mg border-adult">
+				          <h2>Alex Chang</h2>
+				          <h4>【雲林】</h4>
+				          <div class="text-left">
+				            <p>我期望讓學生在彼此互動的過程中學習，讓學生能不害怕地用英語表達自己，鼓勵學生從錯誤中學習，不再因害怕而沉默、無所適從。</p>
+				          </div>
+				          <p><a class="btn btn-secondary bg-adult" href="#" data-toggle="modal" data-target="#Alex">More &raquo;</a></p>
+				        </div><!-- /.col-lg-4 -->
+				      <!-- Jean Chen -->
+				        <div class="text-center col-lg-4 col-md-6 col-sm-6 team-row-mg">
+				          <img src="img/Jean.JPG" alt="Jean" style="width="200px" height="200px"" class="rounded-circle team-pic-mg border-adult">
+				          <h2>Jean Chen</h2>
+				          <h4>【台中】</h4>
+				          <div class="text-left">
+				            <p>我曾經是有上台恐懼症的女生，最後成為了一位英語老師；期許自己能以過來人的身分，帶領學生一起克服對英語的恐懼。</p>
+				          </div>
+				          <p><a class="btn btn-secondary bg-adult" href="#" data-toggle="modal" data-target="#Jean">More &raquo;</a></p>
+				        </div><!-- /.col-lg-4 -->
+				      <!-- Ruby Lu -->
+				        <div class="text-center col-lg-4 col-md-6 col-sm-6 team-row-mg">
+				          <img src="img/bg-01.png" alt="Ruby" style="width="200px" height="200px"" class="rounded-circle team-pic-mg border-adult">
+				          <h2>Ruby Lu</h2>
+				          <h4>【嘉義】</h4>
+				          <div class="text-left">
+				          	<p>語言溝通的美麗，是在我懂你的意思，而你也剛好理解我的閃亮時刻。即使用字簡單，文法還是會用錯，偶爾還會臉啊手啊一起用上，但，只要有進步一點點，那就是一件很棒的事情！希望學生們能在學習的過程中，找到自信。別怕，我們一起前進！</p>
+				          </div>
+				          <p><a class="btn btn-secondary bg-adult" href="#" data-toggle="modal" data-target="#Ruby">More &raquo;</a></p>
+				        </div><!-- /.col-lg-4 -->
+				      <!-- Allison Huang   -->
+                <div id="childteacher"></div>
+				        <div class="text-center col-lg-4 col-md-6 col-sm-6 team-row-mg">
+				          <img src="img/Allison.JPG" alt="Allison" style="width="200px" height="200px"" class="rounded-circle team-pic-mg border-child">
+				          <h2>Allison Huang</h2>
+				          <h4>【兒童繪本】</h4>
+				          <div class="text-left">
+				          	<p>一位時常穿梭在繪本介紹網站與書店展區的女子，<br>深信繪本提供的不僅僅是對於「小孩子」知識與常規上的教育，<br>「大孩子」豐富的人生經歷也能引發強烈共鳴，<br>所以帶著「大小孩」一起密探書中角色、背景與內容的意涵是我最熱愛的事。</p>
+				          </div>
+				          <p><a class="btn btn-secondary bg-child" href="#" data-toggle="modal" data-target="#Allison">More &raquo;</a></p>
+				        </div><!-- /.col-lg-4 -->
+				      <!-- Wendy Lin   -->
+				        <div class=" text-center col-lg-4 col-md-6 col-sm-6 team-row-mg">
+				          <img src="img/Wendy.JPG" alt="Wendy" style="width="200px" height="200px"" class="rounded-circle team-pic-mg border-adult">
+				          <h2>Wendy Lin</h2>
+				          <h4>【線上一對一】</h4>				          
+				          <div class="text-left">
+				          	<p>我在教學時發現英語常是學習者畢業或就業的絆腳石，<br>因此，透過討論實際案例及體驗桌遊課程提升學習者的熱忱與自信；<br>由學習者的回饋可知，英語不但能成為生活中的好幫手，<br>更可以是職場有力的後援！我期望更多人能認識英語的實用及美好，獲得更多有趣的人生經歷。<br></p>
+				          </div>
+				          <p><a class="btn btn-secondary bg-adult" href="#" data-toggle="modal" data-target="#Wendy">More &raquo;</a></p>
+				        </div><!-- /.col-lg-4 -->
+				      </div><!-- /.row -->
+				    </div><!-- /.container -->
+				  </div><!-- card-body -->
+				</div>
+			</div>
+		</div>
 
-    <div class="container team-mg">
-      <div class="row">
-      <!-- Han -->
-        <div class="text-center col-lg-4 col-md-6 col-sm-6 team-row-mg">
-          <img src="img/BG-01.png" alt="" style="width="200px" height="200px"" class="rounded-circle team-pic-mg">
-          <h2>Han Chao</h2>
-          <h4>【創辦人& 線上一對一】</h4>
-          <div class="text-center">
-            <p class="team-text"><i>國立雲林科技大學 應用外語系碩士班 ( 商務溝通組 )</i></p>
-            <p class="team-text"><i>國立台灣師範大學 英語學系</i></p>
-          </div>
-          <div class="text-left">
-            <p>在教學的過程當中，常因看見學了多年英語的學生們，無法向外國朋友流利地表達想法而感到可惜。</p>
-            <p>我始終相信，學習英語能讓自己更多地看見世界，透過語言了解其他文化，也才是語言學習的本質。</p>
-          </div>
-          <div class="text-center">
-            <p><a class="btn btn-secondary bg-adult" href="#" data-toggle="modal" data-target="#Han">More &raquo;</a></p>
-          </div>
-        </div><!-- /.col-lg-4 -->
-      <!-- Alex -->
-        <div class=" text-center col-lg-4 col-md-6 col-sm-6 team-row-mg">
-          <img src="img/BG-01.png" alt="" style="width="200px" height="200px"" class="rounded-circle team-pic-mg">
-          <h2>Alex</h2>
-          <h4>【斗六】</h4>
-          <p>國立雲林科技大學 應用外語系碩士班 ( 英語教學組 )</p>
-          <p>國立雲林科技大學 應用外語系</p>
-          <p><a class="btn btn-secondary bg-adult" href="#" type="button" data-toggle="modal" data-target="#Alex">More &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      <!-- Jean Chen -->
-        <div class="text-center col-lg-4 col-md-6 col-sm-6 team-row-mg">
-          <img src="img/BG-04.png" alt="" style="width="200px" height="200px"" class="rounded-circle team-pic-mg">
-          <h2>Jean Chen</h2>
-          <h4>【台中】</h4>
-          <p>我曾經是有上台恐懼症的女生，最後成為了一位英語老師；期許自己能以過來人的身分，帶領學生一起克服對英語的恐懼。</p>
-          <p><a class="btn btn-secondary" href="#" type="button" data-toggle="modal" data-target="#JeanChen">More &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="text-center col-lg-4 col-md-6 col-sm-6 team-row-mg">
-          <img src="img/BG-04.png" alt="" style="width="200px" height="200px"" class="rounded-circle">
-          <h2>Tina</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-secondary" href="#" type="button" data-toggle="modal" data-target="#Tina">More &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="text-center col-lg-4 col-md-6 col-sm-6 team-row-mg">
-          <img src="img/BG-04.png" alt="" style="width="200px" height="200px"" class="rounded-circle">
-          <h2>Emma</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-secondary" href="#" type="button" data-toggle="modal" data-target="#Emma">More &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class=" text-center col-lg-4 col-md-6 col-sm-6 team-row-mg">
-          <img src="img/BG-01.png" alt="" style="width="200px" height="200px"" class="rounded-circle">
-          <h2>Elmo</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-secondary" href="#" type="button" data-toggle="modal" data-target="#Elmo">More &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-    </div><!-- /.container -->
+<!-- Teams -->
 
 <!-- More - Button triggerred dialog -->
 
@@ -132,23 +159,26 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header"><!-- header -->
-            <h5 class="modal-title" id="HanTitle">Han</h5>
+            <h5 class="modal-title" id="HanTitle">Han Chao</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body text-center"><!-- body -->
-            <img src="img/BG-01.png" alt="" style="width="200px" height="200px"" class="rounded-circle">
+				  	<img src="img/Han.JPG" alt="Han" style="width="200px" height="200px"" class="rounded-circle border-adult">
             <div class="text-left">
-              <h3><b>成人會話</b></h3>
-              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
               <h3><b>學經歷</b></h3>
-              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+              <p>國立雲林科技大學 應用外語系碩士班 ( 商務溝通組 )</p>
+              <p>國立台灣師範大學 英語學系</p>
+              <h3><b>教學理念</b></h3>
+              <p>在教學的過程當中，常因看見學了多年英語的學生們，無法向外國朋友流利地表達想法而感到可惜。</p>
+              <p>我始終相信，學習英語能讓自己更多地看見世界，透過語言了解其他文化，也才是語言學習的本質。</p>
               <h3><b>開班狀態</b></h3>
+              <p>線上一對一客製化教學、成人會話台北班 (2020籌備中)</p>
             </div>
           </div>
           <div class="modal-footer"><!-- footer -->
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary bg-adult" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
@@ -160,23 +190,25 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header"><!-- header -->
-            <h5 class="modal-title" id="AlexTitle">Elmo</h5>
+            <h5 class="modal-title" id="AlexTitle">Alex Chang</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body text-center"><!-- body -->
-            <img src="img/BG-01.png" alt="" style="width="200px" height="200px"" class="rounded-circle">
+				  	<img src="img/Alex.JPG" alt="Alex" style="width="200px" height="200px"" class="rounded-circle border-adult">
             <div class="text-left">
-              <h3><b>老師的話</b></h3>
-              <p>我期望讓學生在彼此互動的過程中學習，讓學生能不害怕地用英語表達自己，鼓勵學生從錯誤中學習，不再因害怕而沉默、無所適從。</p>
               <h3><b>學經歷</b></h3>
-              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+              <p>國立雲林科技大學 應用外語系碩士班 ( 英語教學組 )</p>
+              <p>國立雲林科技大學 應用外語系</p>
+              <h3><b>教學理念</b></h3>
+              <p>我期望讓學生在彼此互動的過程中學習，讓學生能不害怕地用英語表達自己，鼓勵學生從錯誤中學習，不再因害怕而沉默、無所適從。</p>
               <h3><b>開班狀態</b></h3>
+              <p>成人會話雲林班</p>
             </div>
           </div>
           <div class="modal-footer"><!-- footer -->
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary bg-adult" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
@@ -184,110 +216,115 @@
 
 <!-- Jean Chen -->
 
-    <div class="modal fade" id="JeanChen" tabindex="-1" role="dialog" aria-labelledby="PrinceceTitle" aria-hidden="true">
+    <div class="modal fade" id="Jean" tabindex="-1" role="dialog" aria-labelledby="PrinceceTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header"><!-- header -->
-            <h5 class="modal-title" id="JeanChenTitle">Jean Chen</h5>
+            <h5 class="modal-title" id="JeanTitle">Jean Chen</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body text-center"><!-- body -->
-            <img src="img/BG-01.png" alt="" style="width="200px" height="200px"" class="rounded-circle">
+				  	<img src="img/Jean.JPG" alt="Jean" style="width="200px" height="200px"" class="rounded-circle border-adult">
             <div class="text-left">
-              <h3><b>老師的話</b></h3>
-              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
               <h3><b>學經歷</b></h3>
-              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+              <p>國立雲林科技大學 應用外語系碩士班 ( 英語教學組 )</p>
+              <p>國立雲林科技大學 應用外語系</p>
+              <h3><b>教學理念</b></h3>
+              <p>我期望讓學生在彼此互動的過程中學習，讓學生能不害怕地用英語表達自己，鼓勵學生從錯誤中學習，不再因害怕而沉默、無所適從。</p>
               <h3><b>開班狀態</b></h3>
+              <p>成人會話雲林班</p>
             </div>
           </div>
           <div class="modal-footer"><!-- footer -->
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary bg-adult" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
     </div>
 
-<!-- Tina -->
+<!-- Ruby Lu -->
 
-    <div class="modal fade" id="Tina" tabindex="-1" role="dialog" aria-labelledby="TinaTitle" aria-hidden="true">
+    <div class="modal fade" id="Ruby" tabindex="-1" role="dialog" aria-labelledby="TinaTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header"><!-- header -->
-            <h5 class="modal-title" id="TinaTitle">Elmo</h5>
+            <h5 class="modal-title" id="RubyTitle">Ruby Lu</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body text-center"><!-- body -->
-            <img src="img/BG-01.png" alt="" style="width="200px" height="200px"" class="rounded-circle">
+				  	<img src="img/BG-01.png" alt="Ruby" style="width="200px" height="200px"" class="rounded-circle border-adult">
             <div class="text-left">
-              <h3><b>成人會話</b></h3>
-              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
               <h3><b>學經歷</b></h3>
-              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+              <p>國立中正大學 外文系英語教學所</p>
+              <h3><b>教學理念</b></h3>
+              <p>語言溝通的美麗，是在我懂你的意思，而你也剛好理解我的閃亮時刻。即使用字簡單，文法還是會用錯，偶爾還會臉啊手啊一起用上，但，只要有進步一點點，那就是一件很棒的事情！希望學生們能在學習的過程中，找到自信。別怕，我們一起前進！</p>
               <h3><b>開班狀態</b></h3>
+              <p>成人會話嘉義班、嘉義一對一客製化教學</p>
             </div>
           </div>
           <div class="modal-footer"><!-- footer -->
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary bg-adult" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
     </div>
 
-<!-- Emma -->
+<!-- Allison Huang -->
 
-    <div class="modal fade" id="Emma" tabindex="-1" role="dialog" aria-labelledby="ElmoTitle" aria-hidden="true">
+    <div class="modal fade" id="Allison" tabindex="-1" role="dialog" aria-labelledby="ElmoTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header"><!-- header -->
-            <h5 class="modal-title" id="EmmaTitle">Elmo</h5>
+            <h5 class="modal-title" id="AllisonTitle">Allison Huang</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body text-center"><!-- body -->
-            <img src="img/BG-01.png" alt="" style="width="200px" height="200px"" class="rounded-circle">
+				  	<img src="img/Allison.JPG" alt="Allison" style="width="200px" height="200px"" class="rounded-circle border-child">
             <div class="text-left">
-              <h3><b>成人會話</b></h3>
-              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
               <h3><b>學經歷</b></h3>
-              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+              <p>國立雲林科技大學 應用外語系碩士(英語教學組)</p>
+              <h3><b>教學理念</b></h3>
+              <p>一位時常穿梭在繪本介紹網站與書店展區的女子，<br>深信繪本提供的不僅僅是對於「小孩子」知識與常規上的教育，<br>「大孩子」豐富的人生經歷也能引發強烈共鳴，<br>所以帶著「大小孩」一起密探書中角色、背景與內容的意涵是我最熱愛的事。</p>
               <h3><b>開班狀態</b></h3>
+              <p>親子英文繪本嘉義班、兒童繪本家教班</p>
             </div>
           </div>
           <div class="modal-footer"><!-- footer -->
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary bg-child" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
     </div>
 
-<!-- Elmo -->
-    <div class="modal fade" id="Elmo" tabindex="-1" role="dialog" aria-labelledby="ElmoTitle" aria-hidden="true">
+<!-- Wendy Lin -->
+    <div class="modal fade" id="Wendy" tabindex="-1" role="dialog" aria-labelledby="ElmoTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header"><!-- header -->
-            <h5 class="modal-title" id="ElmoTitle">Elmo</h5>
+            <h5 class="modal-title" id="WendyTitle">Wendy Lin</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body text-center"><!-- body -->
-            <img src="img/BG-01.png" alt="" style="width="200px" height="200px"" class="rounded-circle">
+				  	<img src="img/Wendy.JPG" alt="Wendy" style="width="200px" height="200px"" class="rounded-circle border-adult">
             <div class="text-left">
-              <h3><b>成人會話</b></h3>
-              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
               <h3><b>學經歷</b></h3>
-              <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+              <p>國立臺灣科技大學 應用外語系碩士</p>
+              <h3><b>教學理念</b></h3>
+              <p>我在教學時發現英語常是學習者畢業或就業的絆腳石，<br>因此，透過討論實際案例及體驗桌遊課程提升學習者的熱忱與自信；<br>由學習者的回饋可知，英語不但能成為生活中的好幫手，<br>更可以是職場有力的後援！我期望更多人能認識英語的實用及美好，獲得更多有趣的人生經歷。</p>
               <h3><b>開班狀態</b></h3>
+              <p>線上一對一客製化教學</p>
             </div>
           </div>
           <div class="modal-footer"><!-- footer -->
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary bg-adult" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
@@ -297,15 +334,19 @@
     <footer class="mt-auto py-3 bg-adult">
       <div class="container mg-md-0">
         <div class="row">
-          <div class="col-sm-6 col-md-6 py-4">
-            <h4 class="text-white">Slogan</h4>
-            <p class="text-white-70">Add some information about the album below, the author, or any other background context.</p>
-          </div>
+        <!-- slogan -->
+	        <div class="col-sm-6 col-md-6 py-4">
+	          <h4 class="text-white">如果說</h4>
+	          <p class="text-white-70">「如果說」將逐次解除你對英文的恐懼<br>讓擁有流利的英文口說能力不再只是如果</p>
+            <p class="text-white-70">「如果說」邀請你展開自己的地圖<br>一起認識更多新的朋友！</p>
+            <p class="text-white-70">"Language is the road map of a culture. It tells you where its people come from and where they are going." ‒Rita Mae Brown</p>
+	        </div>
+	      <!-- contact -->
           <div class="col-sm-6 col-md-2 py-4">
             <h4 class="text-white">Contact</h4>
-            <ul class="list-unstyled">
-              <li><a href="#" class="text-white-70">Like us on Facebook</a></li>
-              <li><a href="#" class="text-white-70">Email me</a></li>
+            <ul class="list-unstyled nav">
+              <li><a href="https://www.facebook.com/ifenglishstudio/"><img src="img/f_logo_RGB-White_72.png" alt="" style="width="36" height="36""></a></li>
+              <li class="pl-2"><a href="mailto:ifenglishstudio@gmail.com"><i class="fa fa-envelope-o" style="font-size:36px; color:white"></i></a></li>
             </ul>
           </div>
           <div class="col-sm-12 col-md-4 py-4">
@@ -323,7 +364,7 @@
       </div>
       <div class="container mg-md-0">
         <p class="float-right"><a href="#">Back to top</a></p>
-        <span class="text-white">&copy; 2019 If English Studio</span>
+        <span class="text-white-70">&copy; 2019 If English Studio</span>
       </div>
     </footer>
     
