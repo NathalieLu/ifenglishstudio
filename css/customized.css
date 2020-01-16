@@ -83,6 +83,8 @@ h5 {
   border: none;
 }
 
+/* Button 定義 */
+
 .btn-ifenglish {
   font-weight: 400;
   color: #EDCB3A;
@@ -170,6 +172,8 @@ h5 {
   border: 1px solid transparent;
 }
 
+/* button 定義 end */
+
 .nav-if-link.active {
   display: block;
   padding: 0.5rem 1rem;
@@ -255,7 +259,7 @@ header .nav {
 
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  bottom: 3rem;
+  bottom: 20rem;
   z-index: 10;
 }
 
