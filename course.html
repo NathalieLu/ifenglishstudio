@@ -13,7 +13,8 @@
     <!-- Font Awesome icon library CSS-->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>If | Course</title>
+    <link rel="icon" type="image/png" href="img/LOGOr2.png" />
+    <title>Courses</title>
   </head>
 
   <body>
@@ -21,11 +22,10 @@
 <!-- Floating call to action -->
     <div id="MyCTA">
     <span id="title">預約課程</span>
-    <a target="_blank" href="contact.html">快點聯絡我們吧！</a>
+    <a target="_blank" href="contact.html" class="text-child">快點聯絡我們吧！</a>
     </div>
 <!-- Navbar -->
 
-    <header>
       <nav class="navbar fixed-top navbar-dark bg-adult">
         <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,7 +57,6 @@
           </ul>
         </div>
       </nav>
-    </header>
 
 <!-- LOGO BANNER -->
     <div class="jumbotron jumbotron-fluid toplogowrapper">
@@ -69,61 +68,55 @@
       </div>
     </div>
 
-
-<!-- Carousel -->
-
-    <div id="myCarousel" class="carousel carouselcourse slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item course-item text-center active">
-          <img src="img/Courses.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption text-left">
-              <h1 class="t-shadow">4-6人小班教學</h1>
-              <p class="t-shadow">Making friends by speaking English!</p>
-              <p><a class="btn btn-lg-ifenglish" href="#" role="button">Sign up today</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item course-item text-center">
-          <img src="img/Courses.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1 class="t-shadow">全英語會話環境</h1>
-              <p class="t-shadow">Making friends by speaking English!</p>
-              <p><a class="btn btn-lg-ifenglish" href="#" role="button">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item course-item text-center">
-          <img src="img/Courses.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption text-right">
-              <h1 class="t-shadow">當地咖啡廳 恣意聚會</h1>
-              <p class="t-shadow">Making friends by speaking English!</p>
-              <p><a class="btn btn-lg-ifenglish" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-
-
-		<div class="container mb-3">
+		<div class="container my-3">
 			<div class="row justify-content-center">
-				<div class="card w-85 shadow-sm bg-white border-0 justify-content-center pt-2 mt-2">
+				<div class="card w-85 shadow-sm bg-white border-0 justify-content-center mt-2">
+<!-- Carousel -->
+					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					  <!-- 以下是 slider 下方的指示器 -->
+					  <ol class="carousel-indicators">
+					    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					  </ol>
+					  <!-- 以下是 slider 中的影像圖片區 -->
+					  <div class="carousel-inner">
+					    <div class="carousel-item active" data-interval="30000">
+					      <img class="d-block w-100" src="img/course/course1.jpg" alt="First slide">
+		            <div class="carousel-caption">
+		              <h1 class="t-shadow">4-6人小班教學</h1>
+		              <p class="t-shadow">Making friends by speaking English!</p>
+		              <p><a class="btn btn-lg-ifenglish" href="#" role="button">Sign up today</a></p>
+		            </div>
+					    </div>
+					    <div class="carousel-item" data-interval="10000">
+					      <img class="d-block w-100" src="img/course/course3.jpg" alt="Second slide">
+		            <div class="carousel-caption">
+		              <h1 class="t-shadow">全英語會話環境</h1>
+		              <p class="t-shadow">Making friends by speaking English!</p>
+		              <p><a class="btn btn-lg-ifenglish" href="#" role="button">Learn more</a></p>
+		            </div>
+					    </div>
+					    <div class="carousel-item" data-interval="10000">
+					      <img class="d-block w-100" src="img/course/course1.jpg" alt="Third slide">
+		            <div class="carousel-caption">
+		              <h1 class="t-shadow">當地咖啡廳 恣意聚會</h1>
+		              <p class="t-shadow">Making friends by speaking English!</p>
+		              <p><a class="btn btn-lg-ifenglish" href="#" role="button">Browse gallery</a></p>
+		            </div>
+					    </div>
+					  </div>
+					  <!-- 以下是 slider 左右方向的控制區 -->
+					  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					  </a>
+					  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					  </a>    
+					</div>
+
 <!-- Nav tabs -->
 					<h4 class="mt-3">
 						<ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
