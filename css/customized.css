@@ -40,7 +40,7 @@ h5 {
 .border-child {
   border-style: solid;
   border-color: #f8b425 !important;
-  border-width: 0.18rem;
+  border-width: 0.36rem;
 }
 
 .text-adult {
@@ -83,6 +83,121 @@ h5 {
   border: none;
 }
 
+.btn-ifenglish {
+  font-weight: 400;
+  color: #EDCB3A;
+  background-color: #FFF9DE;
+  border: 1px solid #FFF9DE;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.625rem;
+  line-height: 1.5;
+  border-radius: 1rem;
+}
+
+.btn-ifenglish:hover {
+  color: #FFFFFF;
+  background-color: #EFE09B;
+  border: 1px solid transparent;
+}
+
+.btn-ifenglish:focus {
+  color: #FFFFFF;
+  background-color: #9B8423;
+  border: 1px solid transparent;
+}
+
+.btn-ifenglish.disabled, .btn-ifenglish:disabled {
+  color: #FFFFFF;
+  background-color: #E8E8E8;
+  border: 1px solid transparent;
+}
+
+.btn-lg-ifenglish {
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 2rem;
+  font-weight: 400;
+  color: #EDCB3A;
+  background-color: #FFF9DE;
+  border: 1px solid #FFF9DE;
+}
+
+.btn-lg-ifenglish:hover {
+  color: #FFFFFF;
+  background-color: #EFE09B;
+  border: 1px solid transparent;
+}
+
+.btn-lg-ifenglish:focus {
+  color: #FFFFFF;
+  background-color: #9B8423;
+  border: 1px solid transparent;
+}
+
+.btn-lg-ifenglish.disabled, .btn-lg-ifenglish:disabled {
+  color: #FFFFFF;
+  background-color: #E8E8E8;
+  border: 1px solid transparent;
+}
+
+.btn-md-ifenglish {
+  padding: 0.4rem 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 2rem;
+  font-weight: 400;
+  color: #EDCB3A;
+  background-color: #FFF9DE;
+  border: 1px solid #FFF9DE;
+}
+
+.btn-md-ifenglish:hover {
+  color: #FFFFFF;
+  background-color: #EFE09B;
+  border: 1px solid transparent;
+}
+
+.btn-md-ifenglish:focus {
+  color: #FFFFFF;
+  background-color: #9B8423;
+  border: 1px solid transparent;
+}
+
+.btn-md-ifenglish.disabled, .btn-lg-ifenglish:disabled {
+  color: #FFFFFF;
+  background-color: #E8E8E8;
+  border: 1px solid transparent;
+}
+
+.nav-if-link.active {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #FFFFFF;
+  background-color: #9B8423;
+}
+
+
+#MyCTA{
+    position: fixed;  /*固定在網頁上不隨卷軸移動，若要隨卷軸移動用absolute*/
+    top: 10%;  /*設置垂直位置*/
+    right: -140px;  /*設置水平位置，依所放的內容多寡需要自行手動調整*/
+    background: #0ba19c;  /*背景顏色*/
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;  /*圓角*/
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    z-index: 2;
+}
+
+#MyCTA:hover{  /*當滑鼠移至此區塊時，伸縮區塊*/
+    right: -10px;
+}
+
+#MyCTA #title{
+    padding-right: 5px;  /*讓標題與連結中間有空隙*/
+}
 
 
 /* NAVBAR
@@ -283,7 +398,7 @@ header .nav {
 -------------------------------------------------- */
 
 .team-mg {
-  margin-bottom: 3rem;
+  margin-bottom: 0rem;
   margin-top: 1.5rem;
 }
 
@@ -304,6 +419,10 @@ header .nav {
 
 /* THE CAROUSEL (Course)
 -------------------------------------------------- */
+
+.carouselcourse {
+  margin-bottom: 1rem;
+}
 
 .course-item > img {
   position: relative;
@@ -373,9 +492,6 @@ header .nav {
 /*
  * Course posts
  */
-.course-post {
-  margin-bottom: 2rem;
-}
 
 .course-post li {
   padding-bottom: 1rem;
@@ -450,4 +566,58 @@ header .nav {
 .contactcard {
   background-color: transparent;
   border: none;
+}
+
+/* CONTACT */
+
+
+@media (min-width: 576px) {
+  .ptlcontact {
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+  }  
+  .ptlcontact h5 {
+    font-size: 20px;
+  }
+  .ptlcontact ul {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .ptlcontact {
+    padding-top: 3rem;
+    padding-left: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .ptlcontact {
+    padding-top: 5rem;
+    padding-left: 5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ptlcontact {
+    padding-top: 7rem;
+    padding-left: 7rem;
+  }
+  .ptlcontact h5 {
+    font-size: 36px;
+  }
+  .ptlcontact ul {
+    font-size: 20px;
+  }
+}
+
+
+/* FEEDBACK */
+
+.ptfeedback {
+  padding-top: 2.5rem;
+}
+
+.plfeedback {
+  padding-left: 2.5rem;
 }
