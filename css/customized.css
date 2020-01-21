@@ -586,6 +586,13 @@ h5 {
   }
 }
 
+@import url(http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+.icon:before {
+content: '\f005';
+font-family: FontAwesome;
+}
+
+
 /* CONTAINER (CONTACT) */
 
 .contactmg {
