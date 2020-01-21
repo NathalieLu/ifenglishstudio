@@ -21,49 +21,49 @@
 
 <!-- Floating call to action -->
     <div id="MyCTA">
-    <span id="title">預約課程</span>
-    <a target="_blank" href="contact.html">快點聯絡我們吧！</a>
+      <span id="title">預約課程</span>
+      <a target="_blank" href="contact.html" class="text-child">快點聯絡我們吧！</a>
     </div>
 
 <!-- Navbar -->
 
-      <nav class="navbar fixed-top navbar-dark bg-adult">
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html"><b>Home</b></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="course.html">Course</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="feedbacks.html">Feedbacks</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Partner</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Coffee Shop</a>
-            </li>      
-          </ul>
-        </div>
-      </nav>
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-adult">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-md-center" id="menu">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="feedback.html">Feedback</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Partner</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Coffee Shop</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
 <!-- LOGO BANNER -->
     <div class="jumbotron jumbotron-fluid toplogowrapper">
       <div class="container-fluid pt-0">
-        <a class="navbar-brand" href="#">
-          <img src="img/LOGO2.jpg" width="60px" height="60px" class="d-inline-block mb-2" alt="">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/LOGO.jpg" width="60px" height="60px" class="d-inline-block mb-2" alt="">
           <h1 class="text-adult toplogotext">如&nbsp;果&nbsp;說&nbsp;英&nbsp;語&nbsp;會&nbsp;話&nbsp;工&nbsp;作&nbsp;室</h1>
         </a>
       </div>
@@ -118,88 +118,118 @@
       </div>
     </header>
 
-<!-- Card -- News, Courses, CoffeShop -->
+<!-- Card -- Facebook, Intro, Throwback -->
 
     <div class="container">
       <div class="row pt-5">
-        <div class="col-md-4 pdindex"><!-- News -->
+        <div class="col-md-4 pdindex"><!-- Facebook -->
           <div class="card border-0">
-            <img src="img/if TeaTime.jpg" class="card-img border" alt="...">
-            <a href="#">
+            <img src="img/Homesmallfacebook.jpg" class="card-img border" alt="...">
+            <a href="https://www.facebook.com/ifenglishstudio/" target="_blank">
               <div class="card-img-overlay bg-dark-30">
               </div>
             </a>
           </div>
           <div class="card-body">
-            <h5>深度錯亂的錯覺</h5>
+            <h5>Check our latest news on Facebook</h5>
             <p class="pindex">人類眼睛的水晶體會隨著年齡增長而失去某些功能。現今流行以單眼融視（monovision）來解決此問題...</p>
-            <p class="text-right"><small class="text-muted text-right">2019/8/30</small></p>
           </div>
-        </div><!-- News --><!-- column system -->
-        <div class="col-md-4 pdindex"><!-- Courses -->
+        </div><!-- Facebook --><!-- column system -->
+        <div class="col-md-4 pdindex"><!-- Intro -->
           <div class="card border-0">
-            <img src="img/News.png" class="card-img border" alt="...">
-            <a href="#">
+            <img src="img/1minintro.jpg" class="card-img border" alt="...">
+            <a href="#" data-toggle="modal" data-target="#Introduction">
               <div class="card-img-overlay bg-dark-30">
               </div>
             </a>
           </div>
           <div class="card-body">
-            <h5>人人買得起機器人</h5>
+            <h5>One-minute introduction</h5>
             <p class="pindex">科幻小說中常見的機器人管家與警衛早已問世，只不過一般人還無法擁有。實驗室研發家用機器人，大多是在花費...</p>
-            <p class="text-right"><small class="text-muted text-right">2019/8/30</small></p>
           </div>
-        </div><!-- Courses --><!-- column system -->
-        <div class="col-md-4 pdindex"><!-- CoffeeShop -->
+        </div><!-- Intro --><!-- column system -->
+        <div class="col-md-4 pdindex"><!-- Throwback -->
           <div class="card border-0">
-            <img src="img/CoffeShop.jpg" class="card-img border" alt="...">
-						<a href="#">
+            <img src="img/Homesmallppt.jpg" class="card-img border" alt="...">
+						<a href="#" data-toggle="modal" data-target="#Throwback">
 						  <div class="card-img-overlay bg-dark-30">
 						  </div>
 					  </a>
           </div>
           <div class="card-body">
-            <h5>桌上型重力波探測器</h5>
+            <h5>Throwback</h5>
             <p class="pindex">在大霹靂發生後一秒內，宇宙最初的黑洞可能透過重力波宣告了自身的誕生。重力波在膨脹的宇宙中傳播時，會拉...</p>
-            <p class="text-right"><small class="text-muted text-right">2019/8/30</small></p>
           </div>
-        </div><!-- CoffeeShop --><!-- column system -->
+        </div><!-- Throwback --><!-- column system -->
       </div><!-- row -->
     </div><!-- container -->
 
+<!-- Card triggerred dialog -->
+
+    <div class="modal fade" id="Introduction" tabindex="-1" role="dialog" aria-labelledby="HanTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+          <div class="modal-header"><!-- header -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="home-modal-body text-center"><!-- body -->
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/R5sOEohSXNM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="Throwback" tabindex="-1" role="dialog" aria-labelledby="HanTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+        <div class="modal-content">
+          <div class="modal-header"><!-- header -->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="home-modal-body text-center"><!-- body -->
+            <iframe width="100%" height="100%" src="https://drive.google.com/file/d/12oEXRr2QcG63gxILqrc8q5TBojS-8-Q_/preview"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 <!-- FOOTER -->
     <footer class="mt-auto py-3 bg-adult">
-	    <div class="container mg-md-0">
-	      <div class="row">
-	        <div class="col-sm-6 col-md-5 py-4">
-	          <h4 class="text-white">如果說</h4>
-	          <p class="text-white-70">「如果說」將逐次解除你對英文的恐懼<br>讓擁有流利的英文口說能力不再只是如果</p>
+      <div class="container mg-md-0">
+        <div class="row">
+          <div class="col-sm-6 col-md-5 py-4">
+            <h4 class="text-white">如果說</h4>
+            <p class="text-white-70">「如果說」將逐次解除你對英文的恐懼<br>讓擁有流利的英文口說能力不再只是如果</p>
             <p class="text-white-70">「如果說」邀請你展開自己的地圖<br>一起認識更多新的朋友！</p>
             <p class="text-white-70">"Language is the road map of a culture. It tells you where its people come from and where they are going." ‒Rita Mae Brown</p>
-	        </div>
-	        <div class="col-sm-6 col-md-3 py-4">
-	          <h4 class="text-white">Contact</h4>
+          </div>
+          <div class="col-sm-6 col-md-3 py-4">
+            <h4 class="text-white">Contact</h4>
             <ul class="list-unstyled nav">
-              <li><a href="https://www.facebook.com/ifenglishstudio/"><img src="img/facebookfooter.png" alt="facebook"></a></li>
-              <li class="pl-2"><a href="mailto:ifenglishstudio@gmail.com"><img src="img/emailfooter.png" alt=""></a></li>
+              <li><a href="https://www.facebook.com/ifenglishstudio/" target="_blank"><img src="img/facebookfooter.png" alt="facebook"></a></li>
+              <li class="pl-2"><a href=""><span onclick="copyFn('copyEmail1')"><p id="copyEmail1"><img src="img/emailfooter.png" alt="ifenglishstudio@gmail.com"></p></span></a></li>
             </ul>
-	        </div>
-	        <div class="col-sm-12 col-md-4 py-4">
-	          <h4 class="text-white">Subscription</h4>
-						<form>
-						  <div class="form-group">
-						    <label class="text-white-70" for="InputEmail">Subscribe us now!</label>
-						    <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
-						    <small id="emailHelp" class="form-text text-white-70">We'll never share your email with anyone else.</small>
-						  </div>
-						  <button type="submit" class="btn btn-ifenglish">Submit</button>
-						</form>
-	        </div>
-	      </div>
-	    </div>
+          </div>
+          <div class="col-sm-12 col-md-4 py-4">
+            <h4 class="text-white">Subscription</h4>
+            <form>
+              <div class="form-group">
+                <label class="text-white-70" for="InputEmail">Subscribe us now!</label>
+                <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-white-70">We'll never share your email with anyone else.</small>
+              </div>
+              <button type="submit" class="btn btn-ifenglish">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
       <div class="container mg-md-0">
-        <p class="float-right"><a href="#">Back to top</a></p>
         <span class="text-white-70">&copy; 2019 If English Studio</span>
+        <p class="float-right"><a href="#" class="text-white-70">Back to top</a></p>
       </div>
     </footer>
     
@@ -208,6 +238,16 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- Copy Email Script -->
+    <script>            
+      function copyFn(id){
+      var val = document.getElementById(id);
+      window.getSelection().selectAllChildren(val);
+      document.execCommand ("Copy");
+      alert("複製成功")
+      }
+    </script>
 
   </body>
 </html>

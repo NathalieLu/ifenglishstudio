@@ -21,49 +21,49 @@
 
 <!-- Floating call to action -->
     <div id="MyCTA">
-    <span id="title">預約課程</span>
-    <a target="_blank" href="contact.html">快點聯絡我們吧！</a>
+      <span id="title">預約課程</span>
+      <a target="_blank" href="contact.html" class="text-child">快點聯絡我們吧！</a>
     </div>
 
 <!-- Navbar -->
 
-      <nav class="navbar fixed-top navbar-dark bg-adult">
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html"><b>About</b></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="course.html">Course</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="feedbacks.html">Feedbacks</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Partner</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Coffee Shop</a>
-            </li>      
-          </ul>
-        </div>
-      </nav>
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-adult">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-md-center" id="menu">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="about.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="feedback.html">Feedback</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Partner</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Coffee Shop</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
 <!-- LOGO BANNER -->
     <div class="jumbotron jumbotron-fluid toplogowrapper">
       <div class="container-fluid pt-0">
-        <a class="navbar-brand" href="#">
-          <img src="img/LOGO2.jpg" width="60px" height="60px" class="d-inline-block mb-2" alt="">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/LOGO.jpg" width="60px" height="60px" class="d-inline-block mb-2" alt="">
           <h1 class="text-adult toplogotext">如&nbsp;果&nbsp;說&nbsp;英&nbsp;語&nbsp;會&nbsp;話&nbsp;工&nbsp;作&nbsp;室</h1>
         </a>
       </div>
@@ -71,7 +71,7 @@
 
 		<div class="container my-3">
 			<div class="row justify-content-center">
-				<div class="card w-85 shadow-sm bg-white border-0 justify-content-center pt-2 mt-2">
+				<div class="card shadow-sm bg-white border-0 justify-content-center pt-2 mt-2 ifcontentspace">
 				  <div class="card-body">
 				    <h5 class="card-title">關於如果說</h5>
 				    <p class="card-text aboutifcard-p">如果說成立於2017年的夏天，在斗六開啟了工作室的篇章。</p>
@@ -80,7 +80,7 @@
 				    <p class="card-text aboutifcard-p">我們相信，學英文不只為了考試，更是為了探索不同文化，認識新朋友的重要途徑。If English Studio 陪伴你一同成長，一起抓住全新的可能性，透過英文打開新世界的大門。</p>
 				  </div>
           <div id="adultteacher"></div>
-          <img src="img/Group.JPG" class="card-img-top" alt="...">
+          <img src="img/Group.JPG" class="card-img" alt="...">
 
 <!-- 關於如果說的老師們 -->         
 			    <div class="card-body pb-0">
@@ -116,7 +116,7 @@
 				          <div class="text-left">
 				            <p>我曾經是有上台恐懼症的女生，最後成為了一位英語老師；期許自己能以過來人的身分，帶領學生一起克服對英語的恐懼。</p>
 				          </div>
-				          <p><a class="btn btn-secondary bg-adult" href="#" data-toggle="modal" data-target="#Jean">More &raquo;</a></p>
+				          <p><a class="btn btn-md-ifenglish" href="#" data-toggle="modal" data-target="#Jean">More</a></p>
 				        </div><!-- /.col-lg-4 -->
 				      <!-- Ruby Lu -->
 				        <div class="text-center col-lg-4 col-md-6 col-sm-6 team-row-mg">
@@ -127,7 +127,7 @@
 				          	<p>語言溝通的美麗，是在我懂你的意思，而你也剛好理解我的閃亮時刻。即使用字簡單，文法還是會用錯，偶爾還會臉啊手啊一起用上，但，只要有進步一點點，那就是一件很棒的事情！希望學生們能在學習的過程中，找到自信。別怕，我們一起前進！</p>
 				          </div>
                 <div id="childteacher"></div>
-				          <p><a class="btn btn-secondary bg-adult" href="#" data-toggle="modal" data-target="#Ruby">More &raquo;</a></p>
+				          <p><a class="btn btn-md-ifenglish" href="#" data-toggle="modal" data-target="#Ruby">More</a></p>
 				        </div><!-- /.col-lg-4 -->
 				      <!-- Allison Huang   -->
 				        <div class="text-center col-lg-4 col-md-6 col-sm-6 team-row-mg">
@@ -137,7 +137,7 @@
 				          <div class="text-left">
 				          	<p>一位時常穿梭在繪本介紹網站與書店展區的女子，<br>深信繪本提供的不僅僅是對於「小孩子」知識與常規上的教育，<br>「大孩子」豐富的人生經歷也能引發強烈共鳴，<br>所以帶著「大小孩」一起密探書中角色、背景與內容的意涵是我最熱愛的事。</p>
 				          </div>
-				          <p><a class="btn btn-secondary bg-child" href="#" data-toggle="modal" data-target="#Allison">More &raquo;</a></p>
+				          <p><a class="btn btn-mdc-ifenglish" href="#" data-toggle="modal" data-target="#Allison">More</a></p>
 				        </div><!-- /.col-lg-4 -->
 				      <!-- Wendy Lin   -->
 				        <div class=" text-center col-lg-4 col-md-6 col-sm-6 team-row-mg">
@@ -147,7 +147,7 @@
 				          <div class="text-left">
 				          	<p>我在教學時發現英語常是學習者畢業或就業的絆腳石，<br>因此，透過討論實際案例及體驗桌遊課程提升學習者的熱忱與自信；<br>由學習者的回饋可知，英語不但能成為生活中的好幫手，<br>更可以是職場有力的後援！我期望更多人能認識英語的實用及美好，獲得更多有趣的人生經歷。<br></p>
 				          </div>
-				          <p><a class="btn btn-secondary bg-adult" href="#" data-toggle="modal" data-target="#Wendy">More &raquo;</a></p>
+				          <p><a class="btn btn-md-ifenglish bg-adult" href="#" data-toggle="modal" data-target="#Wendy">More</a></p>
 				        </div><!-- /.col-lg-4 -->
 				      </div><!-- /.row -->
 				    </div><!-- /.container -->
@@ -308,7 +308,7 @@
             </div>
           </div>
           <div class="modal-footer"><!-- footer -->
-            <button type="button" class="btn btn-secondary bg-adult" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-md-ifenglish" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
@@ -337,7 +337,7 @@
             </div>
           </div>
           <div class="modal-footer"><!-- footer -->
-            <button type="button" class="btn btn-secondary bg-adult" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-md-ifenglish" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
@@ -366,7 +366,7 @@
             </div>
           </div>
           <div class="modal-footer"><!-- footer -->
-            <button type="button" class="btn btn-secondary bg-child" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-mdc-ifenglish" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
@@ -394,29 +394,28 @@
             </div>
           </div>
           <div class="modal-footer"><!-- footer -->
-            <button type="button" class="btn btn-secondary bg-adult" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-md-ifenglish" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
     </div>
 
+
 <!-- FOOTER -->
     <footer class="mt-auto py-3 bg-adult">
       <div class="container mg-md-0">
         <div class="row">
-        <!-- slogan -->
-	        <div class="col-sm-6 col-md-6 py-4">
-	          <h4 class="text-white">如果說</h4>
-	          <p class="text-white-70">「如果說」將逐次解除你對英文的恐懼<br>讓擁有流利的英文口說能力不再只是如果</p>
+          <div class="col-sm-6 col-md-5 py-4">
+            <h4 class="text-white">如果說</h4>
+            <p class="text-white-70">「如果說」將逐次解除你對英文的恐懼<br>讓擁有流利的英文口說能力不再只是如果</p>
             <p class="text-white-70">「如果說」邀請你展開自己的地圖<br>一起認識更多新的朋友！</p>
             <p class="text-white-70">"Language is the road map of a culture. It tells you where its people come from and where they are going." ‒Rita Mae Brown</p>
-	        </div>
-	      <!-- contact -->
-          <div class="col-sm-6 col-md-2 py-4">
+          </div>
+          <div class="col-sm-6 col-md-3 py-4">
             <h4 class="text-white">Contact</h4>
             <ul class="list-unstyled nav">
-              <li><a href="https://www.facebook.com/ifenglishstudio/"><img src="img/f_logo_RGB-White_72.png" alt="" style="width="28" height="28""></a></li>
-              <li class="pl-2"><a href="mailto:ifenglishstudio@gmail.com"><i class="fa fa-envelope-o" style="font-size:28px; color:white"></i></a></li>
+              <li><a href="https://www.facebook.com/ifenglishstudio/" target="_blank"><img src="img/facebookfooter.png" alt="facebook"></a></li>
+              <li class="pl-2"><a href=""><span onclick="copyFn('copyEmail2')"><p id="copyEmail2"><img src="img/emailfooter.png" alt="ifenglishstudio@gmail.com"></p></span></a></li>
             </ul>
           </div>
           <div class="col-sm-12 col-md-4 py-4">
@@ -427,14 +426,14 @@
                 <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
                 <small id="emailHelp" class="form-text text-white-70">We'll never share your email with anyone else.</small>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-ifenglish">Submit</button>
             </form>
           </div>
         </div>
       </div>
       <div class="container mg-md-0">
-        <p class="float-right"><a href="#">Back to top</a></p>
         <span class="text-white-70">&copy; 2019 If English Studio</span>
+        <p class="float-right"><a href="#" class="text-white-70">Back to top</a></p>
       </div>
     </footer>
     
@@ -443,6 +442,16 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- Copy Email Script -->
+    <script>            
+      function copyFn(id){
+      var val = document.getElementById(id);
+      window.getSelection().selectAllChildren(val);
+      document.execCommand ("Copy");
+      alert("複製成功")
+      }
+    </script>
 
   </body>
 </html>

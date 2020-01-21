@@ -34,7 +34,7 @@ h5 {
   background-color: #0ba19c;
 }
 .bg-child {
-  background-color: #f8b425;
+  background-color: #EDCB3A;
 }
 
 .border-adult {
@@ -45,7 +45,7 @@ h5 {
 
 .border-child {
   border-style: solid;
-  border-color: #f8b425 !important;
+  border-color: #EDCB3A !important;
   border-width: 0.36rem;
 }
 
@@ -54,11 +54,11 @@ h5 {
 }
 
 .text-child {
-  color: #f8b425;
+  color: #EDCB3A;
 }
 
 .text-child:hover {
-  color: #f8b425;
+  color: #EDCB3A;
 }
 
 .mg-md-0 {
@@ -89,17 +89,23 @@ h5 {
   text-shadow: none;
 }
 
-.btn-secondary {
-  border: none;
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.ifcontentspace {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 /* Button 定義 */
 
 .btn-ifenglish {
   font-weight: 400;
-  color: #EDCB3A;
-  background-color: #FFF9DE;
-  border: 1px solid #FFF9DE;
+  color: #FFFFFF;
+  background-color: #0ba19c;
+  border: 1px solid #FFFFFF;
   padding: 0.375rem 0.75rem;
   font-size: 0.625rem;
   line-height: 1.5;
@@ -108,7 +114,7 @@ h5 {
 
 .btn-ifenglish:hover {
   color: #FFFFFF;
-  background-color: #EFE09B;
+  background-color: #EDCB3A;
   border: 1px solid transparent;
 }
 
@@ -130,20 +136,20 @@ h5 {
   line-height: 1.5;
   border-radius: 2rem;
   font-weight: 400;
-  color: #EDCB3A;
-  background-color: #FFF9DE;
-  border: 1px solid #FFF9DE;
+  color: #FFFFFF;
+  background-color: #0ba19c;
+  border: 1px solid #FFFFFF;
 }
 
 .btn-lg-ifenglish:hover {
   color: #FFFFFF;
-  background-color: #EFE09B;
+  background-color: #EDCB3A;
   border: 1px solid transparent;
 }
 
 .btn-lg-ifenglish:focus {
   color: #FFFFFF;
-  background-color: #9B8423;
+  background-color: #0ba19c;
   border: 1px solid transparent;
 }
 
@@ -159,38 +165,76 @@ h5 {
   line-height: 1.5;
   border-radius: 2rem;
   font-weight: 400;
-  color: #EDCB3A;
-  background-color: #FFF9DE;
-  border: 1px solid #FFF9DE;
+  color: #FFFFFF;
+  background-color: #0ba19c;
+  border: 1px solid #FFFFFF;
 }
 
 .btn-md-ifenglish:hover {
-  color: #FFFFFF;
-  background-color: #EFE09B;
-  border: 1px solid transparent;
+  color: #0ba19c;
+  background-color: #FFFFFF;
+  border: 1px solid #0ba19c;
 }
 
 .btn-md-ifenglish:focus {
   color: #FFFFFF;
-  background-color: #9B8423;
+  background-color: #0ba19c;
   border: 1px solid transparent;
 }
 
-.btn-md-ifenglish.disabled, .btn-lg-ifenglish:disabled {
+.btn-md-ifenglish.disabled, .btn-md-ifenglish:disabled {
   color: #FFFFFF;
   background-color: #E8E8E8;
   border: 1px solid transparent;
 }
 
-/* button 定義 end */
-
-.nav-if-link.active {
-  display: block;
-  padding: 0.5rem 1rem;
+.btn-mdc-ifenglish {
+  padding: 0.4rem 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 2rem;
+  font-weight: 400;
   color: #FFFFFF;
-  background-color: #9B8423;
+  background-color: #EDCB3A;
+  border: 1px solid #FFFFFF;
 }
 
+.btn-mdc-ifenglish:hover {
+  color: #0ba19c;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 2rem;
+  font-weight: 400;
+  color: #EDCB3A;
+  background-color: #FFFFFF;
+  border: 1px solid #EDCB3A;
+}
+
+.btn-mdc-ifenglish:focus {
+  color: #FFFFFF;
+  background-color: #EDCB3A;
+  border: 1px solid transparent;
+}
+
+
+/* button 定義 end */
+
+.nav-pills .nav-link {
+  padding: 0.7rem 2rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  border-radius: 2rem;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #0ba19c;
+}
+
+.nav-pills a:hover {
+  color: #EDCB3A;
+}
 
 #MyCTA{
     position: fixed;  /*固定在網頁上不隨卷軸移動，若要隨卷軸移動用absolute*/
@@ -213,8 +257,32 @@ h5 {
     padding-right: 5px;  /*讓標題與連結中間有空隙*/
 }
 
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
 
-/* NAVBAR
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+
+/* LOGO BAR
 -------------------------------------------------- */
 
 .navbar-brand {
@@ -232,16 +300,6 @@ h5 {
   background-color: transparent;
   border: none;
   border-radius: 0rem
-}
-.navbar-collapse a {
-  color: white;
-}
-header .nav {
-  padding-top: 1rem;
-}
-
-.navbar-brand p {
-  margin-bottom: 0rem;
 }
 
 /* LOGO BANNER */
@@ -296,15 +354,15 @@ header .nav {
 }
 
 .carousel-itembghome:nth-of-type(1) {
-  background-image:url(home/course1.jpg);
+  background-image:url(home/首頁輪播1.JPG);
 }
 
 .carousel-itembghome:nth-of-type(2) {
- background-image:url(home/course2.jpg);
+ background-image:url(home/首頁輪播2.JPG);
 }
 
 .carousel-itembghome:nth-of-type(3) { 
-  background-image:url(home/course3.jpg);
+  background-image:url(home/首頁輪播3.jpg);
 }
 
 .carousel-caption {bottom: auto; top: 40%}
@@ -326,14 +384,44 @@ header .nav {
   }
 }
 
-/* Carousel base class */
+/* The Three Column Entry */
 
 
-/* Declare heights because of positioning of img element */
+@media (max-height: 600px) {
+  .home-modal-body {
+    height: 500px;
+  }
+}
 
+@media (max-height: 400px) {
+  .home-modal-body {
+    height: 290px;
+  }
+}
 
-/* Responsitive CSS */
+@media (min-height: 600px) {
+  .home-modal-body {
+    height: 500px;
+  }
+}
 
+@media (min-height: 700px) {
+  .home-modal-body {
+    height: 550px;
+  }
+}
+
+@media (min-height: 800px) {
+  .home-modal-body {
+    height: 600px;
+  }
+}
+
+@media (min-height: 900px) {
+  .home-modal-body {
+    height: 700px;
+  }
+}
 
 
 /* The COLUMN SECTION (INDEX)
@@ -353,14 +441,6 @@ header .nav {
 
 /* TEAM LANDING (ABOUT)
 -------------------------------------------------- */
-
-/* .card-body {
-  padding: 4rem 7rem;
-} */
-
-.aboutifcard{
-  margin-top: 50px;
-}
 
 .aboutifcard-p {
   margin-bottom: 1.25rem;
@@ -545,4 +625,11 @@ header .nav {
 
 .plfeedback {
   padding-left: 2.5rem;
+}
+
+
+/* Footer  */
+
+.text-white-70:hover {
+  color: #EDCB3A;
 }
