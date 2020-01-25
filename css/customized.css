@@ -232,6 +232,9 @@ h6 {
   border: 1px solid transparent;
 }
 
+.honeypot-field {
+  display: none;
+}
 
 /* button 定義 end */
 
