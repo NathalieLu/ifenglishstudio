@@ -91,56 +91,64 @@
               <img src="img/CountOnMe.jpg" class="img-fluid" alt="...">
             </div>
           </div>
+
           <div class="card-body pb-0">
             <h5 class="card-title">或留下你的資料，讓我們聯絡你～</h5>
-            <form class="mt-3">
-              <div class="form-group row">
-                <label for="inputtitle" class="col-sm-2 col-form-label">主題</label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control col-form-label-sm" id="inputTitle" placeholder="我想要了解團體會話課程">
-                  </input>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputname" class="col-sm-2 col-form-label">你的名字</label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control col-form-label-sm" id="inputName" placeholder="海牛大大">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputEmail" class="col-sm-2 col-form-label">Email address</label>
-                <div class="col-sm-10">
-                  <input type="email" class="form-control col-form-label-sm" id="inputEmail" placeholder="ifenglishstudio@gmail.com">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">聯絡內容</label>
-                <div class="col-sm-10">
-                  <textarea class="form-control col-form-label-sm" id="FormControlTextarea" rows="3" placeholder="你好，我是小牛，我想要了解斗六班團體課程"></textarea>
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-10">
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1">
-                    <label class="form-check-label" for="inlineCheckbox1"><small>
-                      I have reviewed and agreed to If English Studio's <a href="" data-toggle="modal" data-target="#Policy">Private Policy</a></small>
-                    </label>
+            <form class="mt-3 gform" method="POST" action="https://script.google.com/macros/s/AKfycbyY32cZys0u3afhGf8edQ7RiE-YzoZzNQhhuHa96A/exec">
+              <div class="form-elements">
+                <div class="form-group row">
+                  <label for="inputtitle" class="col-sm-2 col-form-label">主題</label>
+                  <div class="col-sm-10">
+                    <input name="title" type="text" class="form-control col-form-label-sm" id="inputTitle" placeholder="我想要了解團體會話課程" required>
+                    </input>
                   </div>
-                  <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2">
-                    <label class="form-check-label" for="inlineCheckbox2"><small>
-                      I agree to receive emails from If English Studio
-                    </small></label>
-                  </div> 
                 </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-sm-2"></div>
-                <div class="col-sm-10">
-                  <button type="submit" class="btn btn-md-ifenglish">Send</button>
+                <div class="form-group row">
+                  <label for="inputname" class="col-sm-2 col-form-label">你的名字</label>
+                  <div class="col-sm-10">
+                    <input name="name" type="text" class="form-control col-form-label-sm" id="inputName" placeholder="海牛大大" required>
+                  </div>
                 </div>
+                <div class="form-group row">
+                  <label for="inputEmail" class="col-sm-2 col-form-label">Email address</label>
+                  <div class="col-sm-10">
+                    <input name="email" type="email" class="form-control col-form-label-sm" id="inputEmail" placeholder="ifenglishstudio@gmail.com" required>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">聯絡內容</label>
+                  <div class="col-sm-10">
+                    <textarea name="message" class="form-control col-form-label-sm" id="FormControlTextarea" rows="3" placeholder="你好，我是小牛，我想要了解斗六班團體課程" required></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-2"></div>
+                  <div class="col-sm-10">
+                    <div class="form-check form-check-inline">
+                      <input name="Private Policy & Subscription" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="agreed to private policy" required>
+                      <label class="form-check-label" for="inlineCheckbox1"><small>
+                        I have reviewed and agreed to If English Studio's <a href="" data-toggle="modal" data-target="#Policy">Private Policy</a></small>
+                      </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" name="Private Policy & Subscription" type="checkbox" id="inlineCheckbox2" value="agreed to subscribe">
+                      <label class="form-check-label" for="inlineCheckbox2"><small>
+                        Subscribe If English Studio
+                      </small></label>
+                    </div> 
+                  </div>
+                </div>
+                <input id="honeypot" type="text" name="honeypot" class="honeypot-field" value="" />
+                <div class="form-group row">
+                  <div class="col-sm-2"></div>
+                  <div class="col-sm-10">
+                    <button type="submit" class="btn btn-md-ifenglish">Send</button>
+                  </div>
+                </div>
+              </div> <!-- form-elements -->
+              <!-- The Thankyou Message People See when they submit the form: -->
+              <div class="thankyou_message" style="display:none;">
+                <p class="card-text aboutifcard-p">Thank you for subscribing us! <br> We will get back to you in 3 days.</p>
               </div>
             </form>
           </div><!-- card-body -->
@@ -178,31 +186,39 @@
     <footer class="mt-auto py-3 bg-adult">
       <div class="container mg-md-0">
         <div class="row">
-          <div class="col-sm-6 col-md-5 py-4">
+          <div class="col-sm-8 col-md-5 py-4">
             <h4 class="text-white">如果說</h4>
             <p class="text-white-70">「如果說」將逐次解除你對英文的恐懼<br>讓擁有流利的英文口說能力不再只是如果</p>
             <p class="text-white-70">「如果說」邀請你展開自己的地圖<br>一起認識更多新的朋友！</p>
             <p class="text-white-70">"Language is the road map of a culture. It tells you where its people come from and where they are going." <br>‒ Rita Mae Brown, American writer</p>
           </div>
-          <div class="col-sm-6 col-md-3 py-4">
+          <div class="col-sm-4 col-md-3 py-4">
             <h4 class="text-white">Contact</h4>
             <ul class="list-unstyled nav">
               <li><a href="https://www.facebook.com/ifenglishstudio/" target="_blank"><img src="img/facebookfooter.png" alt="facebook" style="width:30px; height:30px"></a></li>
               <li class="pl-2"><a href=""><span onclick="copyFn('copyEmail1')"><p id="copyEmail1"><img src="img/emailfooter.png" alt="ifenglishstudio@gmail.com" style="width:30px; height:30px"></p></span></a></li>
             </ul>
           </div>
+<!-- Subscription  -->
           <div class="col-sm-12 col-md-4 py-4">
             <h4 class="text-white">Subscribe now!</h4>
-            <form>
-              <div class="form-group footeremail">
-                <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email address">
+            <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyY32cZys0u3afhGf8edQ7RiE-YzoZzNQhhuHa96A/exec">
+              <div class="form-elements form-group footeremail">
+                <input id="Email" name="email" type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email address" required>
+                <input id="honeypot" type="text" name="honeypot" class="honeypot-field" value="" />
                 <small id="emailHelp" class="form-text text-white-70">We will never share your information to any third party.</small>
+
+                <button class="btn btn-ifenglish mt-3">Submit</button>
               </div>
-              <button type="submit" class="btn btn-ifenglish">Submit</button>
-            </form>
+              <!-- The Thankyou Message People See when they submit the form: -->
+              <div class="thankyou_message" style="display:none;">
+                <p class="text-white-70">Thank you for subscribing us! <br> We will get back to you in 3 days.</p>
+              </div>
+            </form> <!-- gform -->
           </div>
-        </div>
-      </div>
+<!-- Subscription ends  -->
+        </div> <!-- row -->
+      </div> <!-- container -->
       <div class="container mg-md-0">
         <span class="text-white-70">&copy; 2020 If English Studio</span>
         <p class="float-right"><a href="#" class="text-white-70">Back to top</a></p>
@@ -215,7 +231,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-<!-- Copy Email Script -->
+    <!-- Copy Email Script -->
     <script>            
       function copyFn(id){
       var val = document.getElementById(id);
@@ -224,6 +240,9 @@
       alert("Email 已經複製成功囉！")
       }
     </script>
+
+    <!-- Form submittion script -->
+    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
 
   </body>
 </html>
