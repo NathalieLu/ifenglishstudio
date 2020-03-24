@@ -236,7 +236,7 @@
 <!-- Subscription  -->
           <div class="col-sm-12 col-md-4 py-4">
             <h4 class="text-white">Subscribe now!</h4>
-            <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyY32cZys0u3afhGf8edQ7RiE-YzoZzNQhhuHa96A/exec">
+            <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyXsYqCS45dGWdL2GmaVp4x5zWNZ9y1KtmmARHylTYSyTRG5Ra2/exec">
               <div class="form-elements form-group footeremail">
                 <input id="Email" name="email" type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email address" required>
                 <input id="honeypot" type="text" name="honeypot" class="honeypot-field" value="" />
@@ -286,6 +286,33 @@
         });
       });
     </script>
+
+    <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v6.0'
+          });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your customer chat code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="151703714914147"
+        theme_color="#0ba19c"
+        logged_in_greeting="Hello! How can we help you?"
+        logged_out_greeting="Hello! How can we help you?">
+      </div>
 
   </body>
 </html>
