@@ -77,53 +77,9 @@
     </nav>
 
 <div>
-  <iframe class="mt-5" src="https://drive.google.com/file/d/126yL_xQ_NbvMU9gjF7iZpQ8EtsrZ2so3/preview" width="100%" height="600px"></iframe>
+  <iframe class="mt-5" src="https://drive.google.com/file/d/126yL_xQ_NbvMU9gjF7iZpQ8EtsrZ2so3/preview" id="mainiframe" width="100%" height="600" scrolling="auto" frameborder="0"></iframe>
 </div>
 
-
-
-<!-- FOOTER -->
-    <footer class="mt-auto py-3 bg-adult">
-      <div class="container mg-md-0">
-        <div class="row">
-          <div class="col-sm-8 col-md-5 py-4">
-            <h4 class="text-white">如果說</h4>
-            <p class="text-white-70">「如果說」將逐次解除你對英文的恐懼<br>讓擁有流利的英文口說能力不再只是如果</p>
-            <p class="text-white-70">「如果說」邀請你展開自己的地圖<br>一起認識更多新的朋友！</p>
-            <p class="text-white-70">"Language is the road map of a culture. It tells you where its people come from and where they are going." <br>‒ Rita Mae Brown, American writer</p>
-          </div>
-          <div class="col-sm-4 col-md-3 py-4">
-            <h4 class="text-white">Contact</h4>
-            <ul class="list-unstyled nav">
-              <li><a href="https://www.facebook.com/ifenglishstudio/" target="_blank"><img src="img/facebookfooter.png" alt="facebook" style="width:30px; height:30px"></a></li>
-              <li class="pl-2"><a href=""><span onclick="copyFn('copyEmail1')"><p id="copyEmail1"><img src="img/emailfooter.png" alt="ifenglishstudio@gmail.com" style="width:30px; height:30px"></p></span></a></li>
-            </ul>
-          </div>
-<!-- Subscription  -->
-          <div class="col-sm-12 col-md-4 py-4">
-            <h4 class="text-white">Subscribe now!</h4>
-            <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyY32cZys0u3afhGf8edQ7RiE-YzoZzNQhhuHa96A/exec">
-              <div class="form-elements form-group footeremail">
-                <input id="Email" name="email" type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email address" required>
-                <input id="honeypot" type="text" name="honeypot" class="honeypot-field" value="" />
-                <small id="emailHelp" class="form-text text-white-70">We will never share your information to any third party.</small>
-
-                <button class="btn btn-ifenglish mt-3">Submit</button>
-              </div>
-              <!-- Customise the Thankyou Message People See when they submit the form: -->
-              <div class="thankyou_message" style="display:none;">
-                <p class="text-white-70">Thank you for subscribing us!</p>
-              </div>
-            </form> <!-- gform -->
-          </div>
-<!-- Subscription ends  -->
-        </div> <!-- row -->
-      </div> <!-- container -->
-      <div class="container mg-md-0">
-        <span class="text-white-70">&copy; 2020 If English Studio</span>
-        <p class="float-right"><a href="#" class="text-white-70">Back to top</a></p>
-      </div>
-    </footer>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -131,18 +87,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-    <!-- Copy Email Script -->
-    <script>            
-      function copyFn(id){
-      var val = document.getElementById(id);
-      window.getSelection().selectAllChildren(val);
-      document.execCommand ("Copy");
-      alert("Email 已經複製成功囉！")
+    <!-- iframe automatically height -->
+    <script>
+      function changeFrameHeight(){
+        var ifm= document.getElementById("mainiframe");
+        ifm.height=document.documentElement.clientHeight-56;
       }
+      window.onresize=function(){ changeFrameHeight();}
+      $(function(){changeFrameHeight();});
     </script>
-
-    <!-- Form submittion script -->
-    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
 
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
